@@ -1,0 +1,153 @@
+@media (max-width:1900px) { //desktop
+    .header__content {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width:1200px) { //desktop
+    .header__content {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width:992px) { //laptop
+    .header__content {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left
+    {
+        width: 450px;
+    }
+
+    .header-img
+    {
+        width: 100%;
+    }
+
+    .about__content
+    {
+        flex-direction: column-reverse;
+        
+    }
+    .content-info{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .other
+    {
+        margin-top: 20px;
+    }
+
+    .section-name
+    {
+        display: none;
+    }
+
+    .skills-center
+    {
+        flex-direction: column;
+    }
+    .skills {
+        min-height: 600px;
+    }
+
+    .sill-il
+    {
+        margin-top: 25px;
+    }
+
+    .portfolio
+    {
+        min-height: 1100px;
+    }
+
+    .portfolio__wrap-center
+    {
+        flex-direction: column;
+    }
+
+    .portfolio__wrap-center .portfolio__item 
+    {
+        margin-top: 25px;
+    }
+
+    .portfolio .banner-left {
+        display: none;
+    }
+}
+
+@media (max-width:768px) { //tablets
+    .banner-left
+    {
+        width: 314px;
+    }
+
+    content-img {
+        width: 80%;
+    }
+
+    .other {
+        width: 80%
+    }
+
+    #img-skills {
+        width: 80%;
+    }
+
+    .fixed-contact
+    {
+        display: none;
+    }
+
+    .skill-img
+    {
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media (max-width:480px) { //phones
+
+
+}
+
+@media (max-width:420px) { //phones
+
+}
+
+
+@media only screen and (min-width: 1200px){
+    .wrap {
+      width: 1127px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) and (min-width: 992px){
+    .wrap {
+      width: 933px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 991px) and (min-width: 768px){
+    .wrap {
+      width: 723px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 767px){
+    .wrap {
+      width: auto;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+}

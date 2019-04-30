@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+h1, h2, h3, h4 {
+    color: #212121;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    position: relative;
+}
+
+.second {
+    background: #F4F4F4;
+}
+
+.particles-js-canvas-el
+{
+    height: 95%;
+}
+
+img {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+
+.section-name {
+    position: absolute;
+    left: 88%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.under-line {
+    position: absolute;
+    height: 3px;
+    width: 130%;
+    top: 100%;
+    left: -30%;
+    background: #16A085;
+}
+
+.tag {
+    color: #FF017B;
+}
+
+.other
+{
+    width: 100%;
+    height: 310px;
+}
+
+.modal 
+{
+    color: white;
+    position: fixed;
+    transition: .5s;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.8196078431372549);
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    overflow-y: scroll;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close
+{
+    position: absolute;
+    font-size: 35px;
+    right: 50px;
+    cursor: pointer;
+    top: 25px;
+}
+
+.content-modal
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.show 
+{
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+
+.loading
+{
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}

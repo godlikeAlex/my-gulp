@@ -1,23 +1,60 @@
-(function() {
-  'use strict';
-  if (document.querySelector('.header__logo')) {
-    setTimeout(function() {
-      document.querySelector('.header__logo').classList.add('m--show');
-    }, 1000);
+const portfolio = document.querySelector('.portfolio-cards');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
+const body = document.querySelector('body');
+const img = document.querySelector('#modal-url');
+const loader = document.querySelector('.loading');
+
+document.addEventListener('DOMContentLoaded', () => {
+  new WOW().init();
+  particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+});
+
+close.addEventListener('click', e => {
+  modal.classList.remove('show');
+  body.style.overflowY = 'scroll';
+});
+
+portfolio.addEventListener('click', e => {
+  const target = e.target;
+
+
+  let parentNode;
+
+  if(target.tagName === 'DIV') {
+    parentNode = target.parentNode;
   }
-})();
 
-// var module = require('./module');
+  if(target.tagName === 'I') {
+    parentNode = target.parentNode.parentNode;
+  }
 
-// module.func1();
-// module.func2();
+  if(parentNode.classList.contains('portfolio__item') ) {
+    modal.classList.add('show');
+    body.style.overflow = 'hidden';
+    img.style.display = "none";
+    loader.style.display = "block";
 
-import { square, MyClass } from './module';
+    img.onload = () => {
+      loader.style.display = "none";
+      img.style.display = "block";
+    };
 
-console.log(square(5));
-var cred = {
-  name: 'Юрий Кучма',
-  enrollmentNo: 11115078
-};
-var x = new MyClass(cred);
-console.log(x.getName());
+    let attrUrl = parentNode.getAttribute('data-url');
+
+    img.setAttribute('src', `./assets/img/${attrUrl}.jpg`);
+  }
+
+  
+
+  if(modal.classList.contains('show')) {
+    modal.addEventListener("click", e => {
+      if (e.target.classList.contains('modal')) {
+        modal.classList.remove('show');
+        body.style.overflowY = 'scroll';
+      }
+    })
+  }
+});

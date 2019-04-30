@@ -1,0 +1,29 @@
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    min-height: 350px;
+}
+
+.about__content
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.about-content
+{
+    width: 75%;
+    padding-right: 35px;
+    z-index: 2
+}
+
+.banner {
+position: relative;
+}
+
+.content-img
+{
+    z-index: 2;
+}

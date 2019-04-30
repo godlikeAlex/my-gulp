@@ -1,0 +1,76 @@
+.header {
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    // background: url('../img/particles.png')
+}
+
+
+
+.logo {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #212121;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;    
+}
+
+.header-img
+{
+    width: 60%;
+    img {
+        width: unset;
+    }
+}
+
+.header__content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-info h1{
+    font-size: 75px;
+}
+
+.content-info h3{
+    font-size: 30px;
+}
+
+.content-info {
+    background: url('../img/banner-dots.png');
+    background-repeat: no-repeat;
+    background-position: 5px 30px;
+    background-size: 70px;
+}
+
+.fixed-contact {
+    position: fixed;
+    top: 80%;
+    right: 5%;
+    font-size: 35px;
+    width: 5px;
+    z-index: 9999;
+}
+
+.baner-right {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.banner-left {
+    position: absolute;
+    left: 0%;
+}

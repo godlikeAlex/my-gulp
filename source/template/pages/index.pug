@@ -4,4 +4,97 @@ block variables
   - var title = 'Home page'
 
 block content
-  include ../common/_header
+  .fixed-contact
+        <a class="social-icon" href="https://t.me/godbrand_ceo" target="_blank"><i class="fab fa-telegram telegram"></i> </a>
+        <a class="social-icon" href="https://github.com/godlikeAlex" target="_blank"><i class="fab fa-github github"></i></a>
+        <a class="social-icon" href="https://vk.com/yurkovsky1" target="_blank"><i class="fab fa-vk vk"></i></a>
+        
+  section.header#particles-js
+      .baner-right
+        img(src="./assets/img/banner_right.png", alt="")  
+      .logo.wow.fadeIn
+        |GODBRAND
+      .wrap
+        .header__content
+          .content-img.header-img.wow.fadeInRight
+            img(src="./assets/img/main.svg", alt="Главная")
+          .content-info.wow.fadeInLeft
+            h1 Портфолио 
+            h3 Веб-Разработчика
+  section.banner
+    .banner-about
+      img(src="./assets/img/banner-about.svg", alt="")  
+    section.about-us
+      .wrap
+        .section-name.wow.flipInY
+          span.tag 
+            | < 
+          span.name
+            | Обо мне   
+          span.tag
+            | /> 
+        .about__content
+            .content-img.other.wow.bounceInUp
+              img(src="./assets/img/about.svg", alt="Главная")
+            .content-info.about-content.wow.bounceInDown
+              |Приветствую вас на моем сайте! Меня зовут Александр. 
+              |Я занимаюсь разработкой веб приложений, на пратяжении полутра года. В основмном орентируюсь на Frontend но так-же занимаюсь созданием серверов типа: 
+              |Rest-Full API, GRAPHQL на Node.js. Все мои технологии которые я использую в работе можно посмотреть ниже.
+    section.skills
+      .wrap
+        .section-name.skill.wow.flipInY
+          span.tag 
+            | < 
+          span.name
+            | Мои инструменты   
+          span.tag
+            | />
+        .skills-center
+          div.skill-img.wow.zoomInLeft
+            img(src="./assets/img/Group.png", alt="")  
+          .content-img.sill-il.wow.zoomInRight
+            img(src="./assets/img/skills.svg", alt="", id="img-skills" )
+  section.portfolio
+    .banner-left(style="    top: 0%;")
+        img(src="./assets/img/banner_bg.svg", alt="")
+    .wrap   
+      .section-name.portfolio.wow.flipInX
+        span.tag 
+            | < 
+        span.name
+            | Портфолио   
+        span.tag
+            | />
+      .portfolio__wrap-center.portfolio-cards
+        div(class="portfolio__item wow zoomInUp" data-url="rus")
+          img(src="./assets/img/portfolio/rus.jpeg", alt="", srcset="")
+          .cover-potfolio <i class="fas fa-search-plus"></i> Верь в Россию
+        div(class="portfolio__item wow zoomInDown" data-url="fly")
+          img(src="./assets/img/portfolio/fly.jpeg", alt="", srcset="")
+          .cover-potfolio <i class="fas fa-search-plus"></i> Рейсы авиакомпании
+        div(class="portfolio__item wow zoomInUp" data-url="modern") 
+          img(src="./assets/img/portfolio/modern.png", alt="", srcset="" )
+          .cover-potfolio <i class="fas fa-search-plus"></i> Агенство создания сайтов
+        div(class="portfolio__item wow zoomInDown" data-url="advokat")
+          img(src="./assets/img/portfolio/advokat.png", alt="", srcset="")      
+          .cover-potfolio <i class="fas fa-search-plus"></i> Адвокатура
+        div(class="portfolio__item wow zoomInDown" data-url="gohub")
+          img(src="./assets/img/portfolio/gohub.png", alt="", srcset="")      
+          .cover-potfolio <i class="fas fa-search-plus"></i> Gohub
+  section.cotanct
+    .center-contact
+      img(src="./assets/img/contact.svg", alt="")
+      .my-contact.wow.fadeInDown
+        <a class="social-icon" href="https://t.me/godbrand_ceo" target="_blank"><i class="fab fa-telegram telegram"></i> </a>
+        <a class="social-icon" href="https://github.com/godlikeAlex" target="_blank"><i class="fab fa-github github"></i></a>
+        <a class="social-icon" href="https://vk.com/yurkovsky1" target="_blank"><i class="fab fa-vk vk"></i></a>
+        
+      .im
+        | Александр Юрковский (c) 2019
+  .modal
+    .close <i class="fas fa-times"></i>
+    .loading
+      |Загрузка...
+    .content-modal
+      img(src="", id="modal-url")    
+    
